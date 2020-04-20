@@ -28,8 +28,8 @@ sig_rev = sqrt(sig.^2+3.*tau.^2);
 
 x = Al(:,2);
 p = polyfit(log(x),log(sig_rev),1);
-m = p(1)
-b = exp(p(2))
+m = p(1) %Aluminum b value
+b = exp(p(2)) %Aluminum a value
 
 
 figure
@@ -65,8 +65,8 @@ sig_rev = sqrt(sig.^2+3.*tau.^2);
 
 x = Br(:,2);
 p = polyfit(log(x),log(sig_rev),1);
-m = p(1)
-b = exp(p(2))
+m = p(1) %Brass b value
+b = exp(p(2)) %Brass a value
 
 figure
 hold on
