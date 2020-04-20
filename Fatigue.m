@@ -28,8 +28,8 @@ sig_rev = sqrt(sig.^2+3.*tau.^2);
 
 x = Al(:,2);
 p = polyfit(log(x),log(sig_rev),1);
-m = p(1);
-b = exp(p(2));
+m = p(1)
+b = exp(p(2))
 
 
 figure
@@ -64,10 +64,9 @@ tau = Br(:,1).*(Q/I*t);
 sig_rev = sqrt(sig.^2+3.*tau.^2);
 
 x = Br(:,2);
-p = polyfit(log(x),log(sig_rev),1)
-m = p(1);
-b = exp(p(2));
-
+p = polyfit(log(x),log(sig_rev),1);
+m = p(1)
+b = exp(p(2))
 
 figure
 hold on
